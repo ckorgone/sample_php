@@ -19,6 +19,5 @@
   <whitelist processUncoveredFilesFromWhitelist="true">
   </whitelist>
 </filter>
-
 </phpunit>
 
