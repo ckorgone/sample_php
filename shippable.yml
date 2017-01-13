@@ -2,6 +2,12 @@
 language: none
 
 build:
+  pre_ci_boot:
+    image_name: drydock/u12nod
+    image_tag: prod
+    pull: false
+    options: '--privileged=true --net=bridge'
+
   ci:
     - export SHIPPABLE_PHP_RUNTIME=7.0
     - /usr/local/bin/phpenv-install 7.0 || echo "cool"
