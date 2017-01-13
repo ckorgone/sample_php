@@ -1,5 +1,9 @@
 # Language setting
-language: none
+
+language: php
+
+php: 
+  - "7.0"
 
 build:
   pre_ci_boot:
