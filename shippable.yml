@@ -3,7 +3,7 @@ language: none
 
 build:
   pre_ci_boot:
-    image_name: drydock/u12nod
+    image_name: drydock/u14php
     image_tag: prod
     pull: false
     options: '--privileged=true --net=bridge'
