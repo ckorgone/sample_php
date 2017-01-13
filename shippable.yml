@@ -17,5 +17,4 @@ build:
     - echo $SHIP_LANGUAGE
     - mkdir -p shippable/codecoverage
     - mkdir -p shippable/testresults
-    - echo "extension=xdebug.so" >> $HOME/.phpenv/versions/$(phpenv version-name)/etc/php.ini
     - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
