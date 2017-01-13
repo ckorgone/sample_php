@@ -13,7 +13,7 @@ build:
     - /usr/local/bin/phpenv-install 7.0 || echo "cool"
     - echo 'export PATH="$HOME/.phpenv/bin:$PATH"' >> ~/.bash_profile
     - echo 'eval "$(phpenv init -)"' >> ~/.bash_profile
-    - $HOME/.phpenv/bin/phpenv local 7.0
+    - $HOME/.phpenv/bin/phpenv global 7.0
     - echo $SHIP_LANGUAGE
     - mkdir -p shippable/codecoverage
     - mkdir -p shippable/testresults
